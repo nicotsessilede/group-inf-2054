@@ -1,0 +1,37 @@
+body{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.player-info{
+  margin-left: 45%;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: gray solid 3px;
+  width: 300px;
+}
+.player-info h1{
+    text-align: center;
+}
+.player-info p {
+    margin-left: 10px;
+}
+.action{
+    font-family: Arial, Helvetica, sans-serif;
+    border: gray solid 3px;
+    width: 200px;
+    margin-left: 25px;
+    padding-bottom: 5px;
+}
+.other{
+    display: flex;
+    margin-left: 30%;
+    margin-top: 25px;
+}
+#rsl0 , #rsl1{
+    display: none;
+}
+.child{
+    text-align: center;
+    margin-left: 180px;
+}

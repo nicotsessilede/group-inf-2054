@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset ="UTF-8">
+    <meta hhtp-equi="X-UA-Compatible" content="ie=edge">
+  <title>Titre de la page</title>
+  <link rel="shorcut icon" href="cropped-favicon.png">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+ <div class="player-info">
+     <h1>Player</h1>
+     <p> CASH : <span id="cash_player">100</span>  $</p>
+     <p> payday : <span id="pay-day">35</span>  $</p>
+     <p> Expense : <span id="expense_player">10</span>  $</p>
+     <p> Child : <span id="child_player">0</span>  Kid(s)</p>
+ </div>
+ <div class="other">
+     <div class="action">
+        <h1>stock</h1>
+        <p>share : <span id="shr">2</span></p>
+        <p>price : <span id="stock-price">30</span>$</p>
+        <div class="btn-stock">
+            <button onclick="buystock()">buy</button>
+            <button onclick="sellstock()">sell</button>
+        </div>
+      </div>
+      <div class="action">
+        <h1>take-loans</h1>
+        <p>refund loan : <span id="refund_loan">00</span>$</p>
+        <p>loan price : <span id="loan-price">1000</span>$</p>
+        <p>10% remise</p>
+        <button onclick="takeloans()">take-loans</button>
+        <button onclick="refundloans()">refund-loan</button>
+      </div>
+      <div class="action">
+        <h1>player-statut</h1>
+        <p id="rsl0">bankcrut! </p>
+        <p id="rsl1">pas en faillite vous puvez ccontinuer la partie</p>
+        <button onclick="statut()">result</button>
+      </div>
+ </div>
+ <div class="child">
+  <p>New child (Expense:5$)</p>
+  <button onclick="newchild()">click</button>
+</div>
+</body>
+<script type="text/javascript" src="src/jquery-3.4.1.js"></script>
+<script src="script.js"></script>
+</html>

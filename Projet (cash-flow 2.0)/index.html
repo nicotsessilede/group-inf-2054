@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="all">
+    <meta hhtp-equi="X-UA-Compatible" content="ie=edge">
+  <title>JS Cash Flows</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Lato|Montserrat|Quattrocento" rel="stylesheet">
+  <link rel="shorcut icon" href="favicon.png">
+  <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <div id="window">
+      <div id="home-screen">
+         <img src="./Css/Ressources/start.png" class="pic-start">
+         <button id="click"></button>
+      </div>
+      <div id="newgame-screen">
+          <div class="screen">
+            <h1 id="screen-title">JS CashFlow</h1>
+            <button id="new-game">Creer une nouvelle partie</button>
+          </div>
+      </div>
+         <!--  -->
+           <div id="menu-screen">
+               <div id="menu-container">
+                  <h1 id="screen-title">JS CashFlow</h1>
+                   <div id="menu-rules">
+                          <h5>Organiser votre partie</h5>
+                       <div class="menu-rules-container">
+                           <span>1-La saisie des informations n'est pas obligatoire,le choix se fera de maniere aleatoire </span><br>
+                           <span>2-Apres avoir entré les informations cliquer sur lancer la partie pour jouer</span><br>
+                       </div>
+                       <div class="player-important-choice">
+                          <div id="menu-player-number-option">
+                             <label>Nombre Joueurs :</label>
+                             <select id="PlayNumber">
+                               <option class="menu-player-number-option">1</option>
+                               <option class="menu-player-number-option">2</option>
+                             </select>
+                          </div>
+                          <div id="menu-player-time-option">
+                            <label>Durée jeu :</label>
+                            <select id="PlayNumber">
+                               <option selected="selected">aleatoire</option>
+                               <option class="menu-player-time-option">30 min</option>
+                               <option class="menu-player-time-option">1H00</option>
+                               <option class="menu-player-time-option">1H30</option>
+                            </select>
+                          </div>
+                       </div>
+                        <div id="menu-players">
+                            <div id="player1" class="player-info-container">
+                               <div class="player-info">
+                                  <label for="name" class="playerNumber">joueur 1: </label>
+                                  <input type="text" value="joueur 1" name="name" id="player1name">
+                               </div>
+                               <div class="player-info">
+                                  <label>Metiers:</label>
+                                  <select id="player1-lst-job" class="lst-job">
+                                      <option selected="selected">aleatoire</option>
+                                     <option>Docteur</option>
+                                  </select>
+                               </div>
+                               <div class="player-info">
+                                 <label>Couleurs:</label>
+                                  <select id="player1-lst-color" class="lst-color">
+                                     <option selected="selected">aleatoire</option>
+                                     <option>bleu</option>
+                                     <option>rouge</option>
+                                  </select>
+                               </div>
+                            </div>
+                            <div id="player2" class="player-info-container">
+                                <div class="player-info">
+                                   <label for="name" class="playerNumber">joueur 2: </label>
+                                   <input type="text" value="joueur 2" name="name" id="player2name">
+                                </div>
+                                <div class="player-info">
+                                   <label>Metiers:</label>
+                                   <select id="player2-lst-job" class="lst-job">
+                                       <option selected="selected">aleatoire</option>
+                                      <option>Docteur</option>
+                                   </select>
+                                </div>
+                                <div class="player-info">
+                                  <label>Couleurs:</label>
+                                   <select id="player2-lst-color" class="lst-color">
+                                      <option selected="selected">aleatoire</option>
+                                      <option>bleu</option>
+                                      <option>rouge</option>
+                                   </select>
+                                </div>
+                             </div>
+                        </div>
+                            <div id="menu-player-child-option">
+                               <label>Nombre d'enfant :</label>
+                               <select id="Player-child">
+                                 <option selected="selected">aleatoire</option>
+                                 <option class="menu-player-child-option">1</option>
+                                 <option class="menu-player-child-option">2</option>
+                               </select>
+                             </div>
+                        <button id="load-party">Lancer la partie</button>
+                   </div>
+               </div>
+           </div>
+         <!--  -->
+    </div>
+
+
+</body>
+<script type="text/javascript" src="src/jquery-3.4.1.js"></script>
+<script src="./javascript/index.js"></script>
+ <script src="./javascript/display.js"></script>
+</html>

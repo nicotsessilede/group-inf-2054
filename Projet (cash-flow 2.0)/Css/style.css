@@ -1,0 +1,379 @@
+body {
+    width: 100%;
+    margin: auto;
+}
+
+#home-screen {
+    padding: 0;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 90%;
+    font-family: lato;
+    background-image: url("./Ressources/cashflow2.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+.pic-start{
+    margin-top: 14px;
+    height: 590px;
+    width: 1050px;
+    border: rgb(34, 33, 33) solid 5px;
+}
+#click{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.1;
+    bottom: 4px;
+    right: 155px;
+    height: 40px;
+    width: 402px;
+}
+#newgame-screen{
+    margin-top: -20px;
+    padding-bottom: 30px;
+    font-family: 'lato', sans-serif;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-image: url("./Ressources/1.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.screen{
+    height: 570px;
+    width: 1000px;
+    background-image: url("./Ressources/papier-texture-papier.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#screen-title{
+    color: rgb(240, 202, 0);
+    font-size: 105px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #222221;
+    letter-spacing: 5px;
+    margin-top: 2rem;
+}
+#new-game{
+    color: #fff;
+    height: 145px;
+    width: 445px;
+    font-size: 45px;
+    font-weight: bold;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #FDD835;
+    font-weight: bold;
+    text-shadow: 0.8px 0.8px 1px #4e342e;
+    padding: 1px 6px;
+    cursor: pointer;
+    margin-top: 6rem;
+}
+#new-game:hover, #load-party:hover{
+    transform: translateY(-.2rem);
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+#new-game:active, #load-party:active{
+    transform: translateY(-.1rem);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+#menu-screen{
+    margin-top: -40px;
+    padding-bottom: 30px;
+    font-family: 'lato', sans-serif;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-image: url("./Ressources/1.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#menu-rules{
+    height: 500px;
+    width: 1000px;
+    background-image: url("./Ressources/papier-texture-papier.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    margin-top: 95px;
+    margin-bottom: 20px;
+}
+.player-important-choice{
+    background-color: teal;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 205px;
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#menu-players{
+    margin-left: 100px;
+    background-color: blue;
+    margin-top: -10px;
+    width: 80%;
+    border-radius: 30px;
+    padding-bottom: 10px;
+}
+#menu-players label{
+    display: inline-block;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-right: 1rem;
+    outline: none;
+}
+#menu-player-time-option{
+
+    margin-left: 20px;
+}
+label{
+    color: white;
+}
+#menu-rules h5{
+    margin-top: 10px;
+    color: rgb(65, 64, 64);
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #5a37f7;
+}
+.menu-rules-container{
+    margin-top: -63px;
+}
+.menu-rules-container span{
+    font-size: 20px;
+}
+.player-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.player-info{
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+#menu-player-child-option{
+    background-color: teal;
+    width: 250px;
+    position: absolute;
+    left: 35.5%;
+    top: 60%;
+    padding: 8px 16px;
+    border-radius: 30px;
+}
+#player1 .player-info{
+    margin-top: 16px;
+}
+#player2 .player-info{
+    margin-top: -10px;
+}
+#load-party{
+    color: #fff;
+    height: 85px;
+    width: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #FDD835;
+    font-weight: bold;
+    text-shadow: 0.8px 0.8px 1px #4e342e;
+    padding: 1px 6px;
+    cursor: pointer;
+    margin-top: 6rem;
+}
+#newgame-screen, #menu-screen, #turn-info-box, #turn-info {
+    display: none;
+}
+
+/* test  */
+#game-container{
+    display: inline-block;
+     width: 985px;
+     margin-left: 20px;
+}
+#board2 {
+    
+    margin: auto;
+    border: 1pt solid white;
+    width: 100%;
+    border-radius: 5px;
+}
+.cell2 {
+    position: absolute;
+	border: 2px outset #FDD835;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    color: rgb(37, 37, 37);
+    height: 75px;
+    font-size: 8pt;
+    letter-spacing: .2pt;
+    text-align: center;
+    box-shadow: .2px .2px .2px .2px #4E342E;
+	border-radius: 7px;
+}
+.board-top2 {
+    position: relative;
+	width: 74px;
+}
+.board-bot2 {
+    position: relative;
+}
+.board-top2-pay {
+    position: relative;
+	width: 102px;
+}
+.pay-space {
+    background-color: #FDD835;
+}
+.opp-space2 {
+    background: rgb(21, 22, 20);
+    background: radial-gradient(circle, rgba(28,60,0,1) 40%, rgba(7,36,1,1) 97%, rgba(4,38,10,1) 100%);
+    opacity: .9;
+}
+.dow-space {
+    background-color: #D32F2F;
+}
+.cell2-left {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    color: white;
+    height: 88px;
+    width: 10%;
+    font-size: 8pt;
+    letter-spacing: .2pt;
+    text-align: center;
+	border: 2pt outset #FDD835;
+	border-radius: 7px;
+    box-shadow: .2px .2px .2px .2px #4E342E;
+}
+.cell2-center {
+    padding: 2px;
+    color: #01030e;
+    border: 2pt solid white;
+}
+#board-container {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    border-radius: 3px;
+}
+#board {
+    /* display: none; */
+    margin: auto;
+    border: 1pt solid white;
+    width: 100%;
+	height: 98%;
+}
+.cell {
+    position: relative;
+	border: 2pt solid white;
+	border-radius: 4px;
+    top: 0px;
+    left: 0px;
+    color: white;
+    height: 88px;
+    width: 13%;
+    font-size: 0.7em;
+    letter-spacing: .2pt;
+    text-align: center;
+    box-shadow: .2px .2px .2px .2px #4E342E;
+	margin: auto;
+}
+.board-top {
+    position: relative;
+}
+.opp-space {
+    background: rgb(67,160,71);
+    /*background: radial-gradient(circle, rgba(67,160,71,1) 97%, rgba(30,104,82,1) 100%);*/
+}
+.lia-space {
+    background-color: #83A296; 
+}
+.cha-space {
+    background: rgb(0,193,218);
+ /*background: radial-gradient(circle, rgba(0,193,218,1) 0%, rgba(109,120,168,0.9864320728291317) 100%);
+   */
+}
+.pay-space {
+    background-color: #FDD835;
+}
+.board-bot {
+    position: relative;
+}
+.off-space {
+    background-color: #0277BD;
+}
+.kid-space {
+    background-color: #FFB74D;
+}
+#player-list-td {
+	height: 473px;
+}
+#player-list,
+#turn-info,
+#finance-box {
+    /* display: none; */
+}
+#player-list-table {
+   color: teal;
+}
+.cell2-right {
+    position: relative;
+	margin: 2px;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    color: white;
+    height: 88px;
+    width: 10%;
+    font-size: 8pt;
+    letter-spacing: .2pt;
+    text-align: center;
+	border: 2pt outset #FDD835;
+	border-radius: 7px;
+    box-shadow: .2px .2px .2px .2px #4E342E;
+}
